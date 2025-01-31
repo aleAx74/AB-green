@@ -4,6 +4,7 @@ Siamo un’organizzazione impegnata nella tutela dell’ambiente, ispirata ai pr
 ## Installation
 
 ```bash
+git clone https://github.com/aleAx74/AB-green.git
 npm init
 npm intall cors express
 npm run dev
