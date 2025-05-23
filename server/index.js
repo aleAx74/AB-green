@@ -3,13 +3,11 @@ const cors = require('cors');
 const txt2json = require("txt-file-to-json");
 const path = require('path');
 const fs = require('fs');
-const corsOption = {
-    origin: ["http://localhost:5173"]
-}
+const corsOption = {}
 const app = express();
 const PORT = 80;
 
-app.use(cors(corsOption));
+app.use(cors());
 
 app.use(express.json());
 
