@@ -5,7 +5,7 @@ import { CO2Model, TemperatureModel, EnergyModel, WaterModel } from "./connessio
 const app = express();
 const PORT = 80;
 
-app.use(cors({origin: "https://ab-green-axhenti.onrender.com"));
+app.use(cors({origin: "https://ab-green-axhenti.onrender.com"}));
 app.use(express.json());
 
 app.get("/api/data/:type", async (req, res) => {
