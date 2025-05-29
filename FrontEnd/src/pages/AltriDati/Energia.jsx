@@ -10,7 +10,7 @@ function Energia() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/data/Energy');
+        const response = await fetch('https://ab-green.onrender.com/api/data/Energy');
         const data = await response.json();
         console.log(data);
         setDatiJson(data);
