@@ -1,0 +1,247 @@
+body{
+  overflow-x: hidden !important;
+}
+.header {
+    background-color: #22577a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  
+    z-index: 300;
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 6vh;
+  }
+  .header nav {
+    margin: 0;
+    padding: 0;
+    
+    
+    overflow: hidden;
+  }
+  .header ul{
+    list-style: none;
+  }
+  .header ul a {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  .header ul li{
+    margin-left: -1vh;
+    border-radius: 10px;
+    text-align: left !important;
+  }
+  
+  .header li:hover{
+    background-color: #38a3a5;
+  }
+  
+  .header .logo {
+    float: left;
+    font-size: 25px;
+  }
+  
+  
+  
+  
+  .header .logo img{
+    width: 60px;
+    height: 60px;
+  }
+  
+  .header .logo{
+    padding: 0;
+    margin-left: 15px;
+  }
+  
+  
+  
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+  }
+  .header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .header .menu-icon .nav-icon {
+    background-color: gray;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color 0.2s ease-out;
+  }
+  .header .menu-icon .nav-icon::before,
+  .header .menu-icon .nav-icon::after {
+    background-color: gray;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+  }
+  .header .menu-icon .nav-icon::before {
+    top: 5px;
+  }
+  .header .menu-icon .nav-icon::after {
+    top: -5px;
+  }
+  .header .menu-btn {
+    display: none;
+  }
+  .header .menu-btn:checked ~ .menu {
+    max-height: 400px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  button{
+    margin-bottom: 10vh !important;
+  }
+  
+  .contattaci{
+    display: none;
+  }
+  
+  
+  
+  
+  @media (min-width: 800px) {
+    .header nav{
+      overflow: visible;
+      max-height: 100%;
+      margin-right: 4vh;
+    }
+    .header li:hover{
+        background: transparent;
+    }
+    
+    .header li a {
+      transform: translateY(-15%);
+      padding: 20px 30px;
+      color: #fff !important;
+      transition: color 0.7s ease;
+    }
+  
+    .header li a:hover{
+        color: #fff;
+        text-decoration: underline;
+    }
+    .header .menu{
+      clear: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      max-height: 0;
+    }
+  
+    .header .menu-icon {
+      display: none;
+    }
+  
+    .header{
+        background: transparent;
+  
+    }
+    .scrolled {
+      background-color: #22577a;
+      height: 10vh;
+        
+    
+      }
+  
+    #main{
+        height: 90vh;
+    }
+    .header ul {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
+    .header li {
+        float: left !important;
+      }
+
+      .contattaci{
+        display: block;
+        float: right;
+      }
+  }
+  
+  
+  .grid{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .grid div, img{
+    width: 90vh;
+  }
+  
+
+  
+  body, #root{
+    width: 100vw !important;
+  }
+  
+  p{
+    text-align: justify;
+    font-size: calc(.7em + 1vh) !important;
+  }
+  
+  @media (max-width: 1000px){
+    body{
+        overflow-x: hidden;
+    }
+    html{
+      width: 100vw !important;
+    }
+    .grid{
+      margin-top: 20vh !important;
+      display: block;
+      width: 90%;
+      margin-left: 50% !important;
+      transform: translateX(-50%) !important;
+      text-align: center;
+
+    }
+
+    .grid img{
+      display: none;
+    }
+    .grid div{
+      width: 100%;
+    }
+
+  
+    
+  }
+
