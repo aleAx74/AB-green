@@ -10,7 +10,7 @@ function Temperatura() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/data/Temperature');
+        const response = await fetch('https://ab-green.onrender.com/api/data/Temperature');
         const data = await response.json();
         console.log(data);
         setDatiJson(data);
