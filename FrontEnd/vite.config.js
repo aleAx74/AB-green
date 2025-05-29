@@ -7,7 +7,7 @@ export default defineConfig({
     host: '0.0.0.0',
     proxy: {
       '/api': {
-        target: 'https://ab-green-vsv1.onrender.com',
+        target: 'https://ab-green.onrender.com/',
         changeOrigin: true,
         secure: false,
         logLevel: 'debug',
