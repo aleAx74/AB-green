@@ -10,7 +10,7 @@ function CO2() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/data/CO2');
+        const response = await fetch('https://ab-green.onrender.com/api/data/CO2');
         const data = await response.json();
         console.log(data);
         setDatiJson(data);
