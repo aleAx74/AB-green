@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy" : "https://ab-green-vsv1.onrender.com",
+  "proxy" : "https://ab-green.onrender.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
