@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
+require('dotenv').config();
 
-const mongoURI = "mongodb+srv://mongo_alessandro:E1jkbfsFxY5f9b8n@cluster0.7gzgv.mongodb.net/AB-green?retryWrites=true&w=majority&appName=Cluster0";
+const mongoURI = process.env.URL;
 
 mongoose.connect(mongoURI)
   .then(() => {
